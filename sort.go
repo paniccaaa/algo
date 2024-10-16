@@ -1,4 +1,4 @@
-// Package algo provides implementations of various sorting algorithms.
+// Package algo provide implementations of various sorting algorithms.
 // This package includes Bubble Sort, Insertion Sort, Selection Sort,
 // and Quick Sort algorithms to sort arrays of integers in ascending order.
 package algo
