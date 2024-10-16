@@ -12,11 +12,6 @@ package algo
 // The average and worst-case time complexity of this algorithm is O(n^2),
 // making it inefficient for large datasets. However, it is simple and
 // easy to understand, making it useful for educational purposes.
-//
-// Example usage:
-// arr := []int{5, 3, 8, 4, 2}
-// BubbleSort(arr)
-// fmt.Println(arr) // Output: [2 3 4 5 8]
 func BubbleSort(arr []int) {
 	n := len(arr)
 	for i := 0; i < n; i++ {
@@ -36,11 +31,6 @@ func BubbleSort(arr []int) {
 //
 // The average and worst-case time complexity of this algorithm is O(n^2),
 // but it performs well on small or partially sorted datasets.
-//
-// Example usage:
-// arr := []int{5, 3, 8, 4, 2}
-// InsertionSort(arr)
-// fmt.Println(arr) // Output: [2 3 4 5 8]
 func InsertionSort(arr []int) {
 	for i := 1; i < len(arr); i++ {
 		key := arr[i]
@@ -51,7 +41,7 @@ func InsertionSort(arr []int) {
 			arr[j+1] = arr[j]
 			j = j - 1
 		}
-		arr[j+1] = key // Insert the key at the correct position
+		arr[j+1] = key
 	}
 }
 
@@ -63,11 +53,6 @@ func InsertionSort(arr []int) {
 // The average and worst-case time complexity of this algorithm is O(n^2).
 // It is not suitable for large datasets but can be useful in specific
 // situations where memory writes are costly.
-//
-// Example usage:
-// arr := []int{5, 3, 8, 4, 2}
-// SelectionSort(arr)
-// fmt.Println(arr) // Output: [2 3 4 5 8]
 func SelectionSort(arr []int) {
 	n := len(arr)
 	for i := 0; i < n-1; i++ {
@@ -94,11 +79,6 @@ func SelectionSort(arr []int) {
 // while the worst-case time complexity is O(n^2) when the pivot is
 // poorly chosen. However, with proper pivot selection (e.g., using
 // the median), the performance can be significantly improved.
-//
-// Example usage:
-// arr := []int{5, 3, 8, 4, 2}
-// QuickSort(arr, 0, len(arr)-1)
-// fmt.Println(arr) // Output: [2 3 4 5 8]
 func QuickSort(arr []int, low, high int) {
 	if low < high {
 		// Partition the array and get the pivot index
@@ -114,10 +94,6 @@ func QuickSort(arr []int, low, high int) {
 // It selects the last element as the pivot, places the pivot at its correct
 // position in the sorted array, and places all elements smaller than the pivot
 // to the left and all elements larger to the right.
-//
-// Example:
-// For arr = [5, 3, 8, 4, 2] with pivot = 2, the array will be rearranged
-// to [1, 2, 3, 4, 5].
 func partition(arr []int, low, high int) int {
 	pivot := arr[high]
 	i := low - 1
