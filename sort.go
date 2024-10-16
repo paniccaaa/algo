@@ -1,8 +1,7 @@
-package algo
-
-// Package gosort provides implementations of various sorting algorithms.
+// Package algo provides implementations of various sorting algorithms.
 // This package includes Bubble Sort, Insertion Sort, Selection Sort,
 // and Quick Sort algorithms to sort arrays of integers in ascending order.
+package algo
 
 // BubbleSort sorts an array of integers using the bubble sort algorithm.
 // This algorithm repeatedly steps through the array, compares adjacent
